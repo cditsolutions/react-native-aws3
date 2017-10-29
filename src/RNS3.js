@@ -64,6 +64,6 @@ export class RNS3 {
 
     return FetchRequest.create(url, method, policy)
       .set("file", file)
-      .send()
-      .then(setBodyAsParsedXML)
+      .send();
+      // .then(setBodyAsParsedXML)
   }}

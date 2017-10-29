@@ -96,23 +96,23 @@ export class FetchRequest {
 
   send() {
 
-RNFetchBlob
+    return RNFetchBlob
     //.config({
-    //    // DCIMDir is in external storage 
+    //    // DCIMDir is in external storage
     //    path : dirs.DCIMDir + '/music.mp3'
     //})
-    .fetch(this.method, this.url, this.headers, this.formData)
-    .then((r) => {
+      .fetch(this.method, this.url, this.headers, this.formData);
+    // .then((r) => {
         // console.log("file uploaded", r);
-        // scan file success 
-    })
-    .catch((err) => {
-        console.log("upload error", error);
-        // scan file error 
-    })
+        // scan file success
+    // })
+    // .catch((err) => {
+        // console.log("upload error", error);
+        // scan file error
+    // })
 
     // this._xhr.send(this._formData);
-    return this;
+    // return this;
   }
 
   abort() {
